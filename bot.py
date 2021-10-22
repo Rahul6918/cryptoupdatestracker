@@ -21,7 +21,7 @@ def help(update, context):
     update.message.reply_text('Here are the Commands You can use\n\n''/start --- Start Over\n\n''/cryptoupdates --- Get Crypto Currency Updates\n\n' '/help --- Get Help\n\n' '/contact --- Contact')
    
 def contact(update, context):
-    update.message.reply_text('Contact Our Developers for any Issue\n\n'' @rahulroy6918 \t @Masken_Madchen \n''Rahul Roy - https://t.me/rahulroy6918\n''Sulagna Mukherjee - https://t.me/Masken_Madchen' )                           
+    update.message.reply_text('Contact Our Developers for any Issue\n\n'' @rahulroy6918 \t @Masken_Madchen \n''Rahul Roy - https://t.me/rahulroy6918\n''Tithi Mukherjee - https://t.me/Masken_Madchen' )                           
                               
 def cryptoupdates(update, context):
     chat_id = update.effective_chat.id
