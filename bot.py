@@ -15,8 +15,14 @@ logger = logging.getLogger(__name__)
 
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Welcome to Crypto Updates Tracker\n''Type /cryptoupdates to Get Crypto Currency Updates')
+    update.message.reply_text('Welcome to Crypto Updates Tracker\n''Type /cryptoupdates to Get Crypto Currency Updates \n''To get help or to know more about it type /help')
 
+def help(update, context):
+    update.message.reply_text('Here are the Commands You can use\n\n''Start Over --- /start\n''Get Crypto Currency Updates --- /cryptoupdates\n' 'Get Help --- /help\n' 'Contact --- /contact')
+   
+def contact(update, context):
+    update.message.reply_text('Contact Our Developers for any Issue\n\n'' @rahulroy6918 \t  ' )                           
+                              
 def cryptoupdates(update, context):
     chat_id = update.effective_chat.id
     message = ""
@@ -33,4 +39,6 @@ def cryptoupdates(update, context):
 
 dispatcher.add_handler(CommandHandler("start", start))
 dispatcher.add_handler(CommandHandler("cryptoupdates", cryptoupdates))
+dispatcher.add_handler(CommandHandler("help", help))
+dispatcher.add_handler(CommandHandler("contact", contact))
 updater.start_polling()
