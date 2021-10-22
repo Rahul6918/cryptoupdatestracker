@@ -20,4 +20,4 @@ def get_prices():
 
 
 if __name__ == "__main__":
-    print(get_prices()))
+    print(get_prices())
