@@ -15,13 +15,13 @@ logger = logging.getLogger(__name__)
 
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Welcome to Crypto Updates Tracker\n''Type /cryptoupdates to Get Crypto Currency Updates \n''To get help or to know more about it type /help')
+    update.message.reply_text('Welcome to Crypto Updates Tracker\n\n''Type /cryptoupdates to Get Crypto Currency Updates \n\n''To get help or to know more about it type /help')
 
 def help(update, context):
-    update.message.reply_text('Here are the Commands You can use\n\n''Start Over --- /start\n''Get Crypto Currency Updates --- /cryptoupdates\n' 'Get Help --- /help\n' 'Contact --- /contact')
+    update.message.reply_text('Here are the Commands You can use\n\n''/start --- Start Over\n\n''/cryptoupdates --- Get Crypto Currency Updates\n\n' '/help --- Get Help\n\n' '/contact --- Contact')
    
 def contact(update, context):
-    update.message.reply_text('Contact Our Developers for any Issue\n\n'' @rahulroy6918 \t  ' )                           
+    update.message.reply_text('Contact Our Developers for any Issue\n\n'' @rahulroy6918 \t @Masken_Madchen \n''Rahul Roy - https://t.me/rahulroy6918\n''Sulagna Mukherjee - https://t.me/Masken_Madchen' )                           
                               
 def cryptoupdates(update, context):
     chat_id = update.effective_chat.id
