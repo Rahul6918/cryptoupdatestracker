@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Welcome to Crypto Updates Tracker Type cryptoupdate to Get Crypto Currency Updates')
+    update.message.reply_text('Welcome to Crypto Updates Tracker''Type /cryptoupdate to Get Crypto Currency Updates')
 
 def cryptoupdates(update, context):
     chat_id = update.effective_chat.id
