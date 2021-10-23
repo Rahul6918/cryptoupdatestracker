@@ -33,7 +33,10 @@ def cryptoupdates(update, context):
         price = crypto_data[i]["price"]
         change_day = crypto_data[i]["change_day"]
         change_hour = crypto_data[i]["change_hour"]
-        message += f"Coin: {coin}\nPrice: ${price:,.2f}\nHour Change: {change_hour:.3f}%\nDay Change: {change_day:.3f}%\n\n"
+        open_day = crypto_data[i]["open_day"]
+        high_day = crypto_data[i]["high_day"]
+        low_day = crypto_data[i]["low_day"]
+        message += f"Coin: {coin}\nPrice: ${price:,.2f}\nHour Change: {change_hour:.3f}%\nDay Change: {change_day:.3f}%\nOpen Day: ${open_day:,.2f}\nHigh 24 Hour: ${high_day:,.2f}\nLow 24 Hour: ${low_day:,.2f}\n\n"
 
     context.bot.send_message(chat_id=chat_id, text=message)
 
