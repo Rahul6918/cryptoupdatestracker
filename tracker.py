@@ -11,9 +11,9 @@ def get_prices():
     for i in get_crypto_data:
         data[i] = {
             "coin": i,
-            "price": get_crypto_data[i]["USD"]["PRICE"],
-            "change_day": get_crypto_data[i]["USD"]["CHANGEPCT24HOUR"],
-            "change_hour": get_crypto_data[i]["USD"]["CHANGEPCTHOUR"]
+            "price": get_crypto_data[i]["USD"]["EUR"]["IND"]["PRICE"],
+            "change_day": get_crypto_data[i]["USD"]["EUR"]["IND"]["CHANGEPCT24HOUR"],
+            "change_hour": get_crypto_data[i]["USD"]["EUR"]["IND"]["CHANGEPCTHOUR"]
         }
 
     return data
