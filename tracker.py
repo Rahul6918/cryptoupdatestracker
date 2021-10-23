@@ -13,7 +13,10 @@ def get_prices():
             "coin": i,
             "price": get_crypto_data[i]["USD"]["PRICE"],
             "change_day": get_crypto_data[i]["USD"]["CHANGEPCT24HOUR"],
-            "change_hour": get_crypto_data[i]["USD"]["CHANGEPCTHOUR"]
+            "change_hour": get_crypto_data[i]["USD"]["CHANGEPCTHOUR"],
+            "open_day": get_crypto_data[i]["USD"]["OPENDAY"],
+            "high_day": get_crypto_data[i]["USD"]["HIGH24HOUR"],
+            "low_day": get_crypto_data[i]["USD"]["LOW24HOUR"]
         }
 
     return data
