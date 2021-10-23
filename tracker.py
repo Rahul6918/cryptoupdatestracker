@@ -5,7 +5,7 @@ def get_prices():
     crypto_coins = ["BTC", "ETH", "XRP", "LTC", "BCH", "ADA", "DOT", "LINK", "BNB", "XLM"]
 
     get_crypto_data = requests.get(
-        "https://min-api.cryptocompare.com/data/pricemultifull?fsyms={}&tsyms=USD".format(",".join(crypto_coins))).json()["RAW"]
+        ...............................................................................................................
 
     data = {}
     for i in get_crypto_data:
